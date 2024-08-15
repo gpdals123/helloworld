@@ -13,8 +13,8 @@
     - 'deploy'
     - 'helloworld-test1'
     - '--image'
-    - 'asia-northeast1-docker.pkg.dev/my-project-hyungmin-test/helloworld-test1:$COMMIT_SHA'
+    - 'asia-northeast1-docker.pkg.dev/my-project-hyungmin-test/helloworld-test1/helloworld:$COMMIT_SHA'
     - '--region'
     - 'asia-northeast1'
   images:
-  - 'asia-northeast1-docker.pkg.dev/my-project-hyungmin-test/helloworld-test1:$COMMIT_SHA'
+  - 'asia-northeast1-docker.pkg.dev/my-project-hyungmin-test/helloworld-test1/helloworld:$COMMIT_SHA'
