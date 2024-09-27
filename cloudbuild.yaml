@@ -6,7 +6,7 @@ steps:
   - deploy
   - hyungmin-testing-0927-4
   - --region=asia-northeast1
-  - --source=.
+  - --source=gs://test-hyungmin1/testing-functions.zip
   - --runtime=nodejs20
   - --gen2
   - --trigger-http
