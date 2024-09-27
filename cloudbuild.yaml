@@ -1,20 +1,11 @@
-  steps:
-  # Build the container image
-  - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'asia-northeast1-docker.pkg.dev/my-project-hyungmin-test/helloworld-test1/helloworld:$COMMIT_SHA', '.']
-  # Push the container image to Container Registry
-  - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'asia-northeast1-docker.pkg.dev/my-project-hyungmin-test/helloworld-test1/helloworld:$COMMIT_SHA']
-  # Deploy container image to Cloud Run
+ # Deploy container image to Cloud Run
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
     entrypoint: gcloud
     args:
-    - 'run'
+    - 'functions'
     - 'deploy'
-    - 'helloworld-test1'
-    - '--image'
-    - 'asia-northeast1-docker.pkg.dev/my-project-hyungmin-test/helloworld-test1/helloworld:$COMMIT_SHA'
+    - 'hyungmin-testing-0927'
+    - '--source'
+    - 'gs://test-hyungmin1/testing-functions.zip'
     - '--region'
     - 'asia-northeast1'
-  images:
-  - 'asia-northeast1-docker.pkg.dev/my-project-hyungmin-test/helloworld-test1/helloworld:$COMMIT_SHA'
