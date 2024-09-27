@@ -4,7 +4,7 @@ steps:
   - gcloud
   - functions
   - deploy
-  - hyungmin-testing-0927-3
+  - hyungmin-testing-0927-4
   - --region=asia-northeast1
   - --source=.
   - --runtime=nodejs20
