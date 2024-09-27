@@ -8,5 +8,5 @@ steps:
   - --region=asia-northeast1
   - --source=gs://test-hyungmin1/testing-functions.zip
   - --trigger-http
-  - --runtime=Node.js20
+  - --runtime=nodejs20
   - --gen2
