@@ -4,7 +4,7 @@ steps:
   - gcloud
   - functions
   - deploy
-  - hyungmin-testing-0927
+  - hyungmin-testing-0927-1
   - --region=asia-northeast1
   - --source=gs://test-hyungmin1/testing-functions.zip
   - --trigger-http
