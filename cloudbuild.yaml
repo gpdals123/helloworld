@@ -7,7 +7,5 @@ steps:
   - hyungmin-testing-0927-2
   - --region=asia-northeast1
   - --source=gs://test-hyungmin1/testing-functions.zip
-  - --trigger-http
   - --runtime=nodejs20
   - --gen2
-  - --mode=remote-repository
