@@ -9,3 +9,4 @@ steps:
   - --source=gs://test-hyungmin1/testing-functions.zip
   - --runtime=nodejs20
   - --gen2
+  - --trigger-http
