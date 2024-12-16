@@ -2,4 +2,4 @@ steps:
 - name: 'gcr.io/cloud-builders/docker'
   args: ['build', '-t', 'us-central1-docker.pkg.dev/my-project-hyungmin-test/my-docker-repo/my-image', '.']
 options:
- logging: GCS_ONLY
+ logging: CLOUD_LOGGING_ONLY
