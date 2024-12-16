@@ -1,6 +1,6 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
   args: ['build', '-t', 'us-central1-docker.pkg.dev/my-project-hyungmin-test/my-docker-repo/my-image', '.']
-serviceAccount: 'projects/my-project-hyungmin-test/serviceAccounts/195147907932-compute@developer.gserviceaccount.com'
+serviceAccount: 'projects/my-project-hyungmin-test/serviceAccounts/195147907932@cloudbuild.gserviceaccount.com'
 options:
  logging: CLOUD_LOGGING_ONLY
