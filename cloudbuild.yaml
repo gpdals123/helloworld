@@ -4,12 +4,3 @@ steps:
 serviceAccount: 'projects/my-project-hyungmin-test/serviceAccounts/195147907932-compute@developer.gserviceaccount.com'
 options:
  logging: CLOUD_LOGGING_ONLY
-authentication:
-  rules:
-  - selector: '*'
-    oauth:
-      canonical_scopes: https://www.googleapis.com/auth/cloud-platform
-    browser_first_party_auth:
-      # This is equivalent to the cloud-platform scope for First Party Auth.
-      scope_codes: API_CLOUD_PLATFORM_FIRSTPARTY
-    use_rpc_security_policy: DELEGATED)
