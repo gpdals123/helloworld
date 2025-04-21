@@ -4,7 +4,7 @@ import bodyParser from 'body-parser';
 import { Logging } from '@google-cloud/logging';
 
 const app = express();
-const PORT = 8080;
+const PORT = 3000;
 
 // Set up Google Cloud Logging
 const logging = new Logging();
@@ -88,6 +88,6 @@ app.use((err, req, res, next) => {
 // Start the server
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
-  console.log('Ensure you are accessing the correct port: 8080');
+  console.log('Ensure you are accessing the correct port: 3000');
 });
 
